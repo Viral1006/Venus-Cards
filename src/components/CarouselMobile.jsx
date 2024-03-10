@@ -177,7 +177,7 @@ useEffect(() => {
 // </div>
 
 <div className="flex items-center justify-center z-0">
-  <div className="bg-[#ffdfdf] p-4 w-screen h-[60vh] flex flex-col items-center justify-between relative">
+  <div className="bg-[#ffdfdf] p-4 w-screen h-auto flex flex-col items-center justify-between relative">
     <div className="mb-2 md:mb-4"> {/* Decreased margin bottom */}
       <h2 className="text-3xl md:text-5xl font-bold text-gray-800 font-barlow-condensed mb-2 text-center">
         {products[currentProductIndex].name}
