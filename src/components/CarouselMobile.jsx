@@ -87,7 +87,7 @@ const prevProduct = () => {
 useEffect(() => {
   const interval = setInterval(() => {
     nextProduct();
-  }, 5000); // Change product every 5 seconds
+  }, 3000); // Change product every 5 seconds
 
   return () => clearInterval(interval);
 }, []); // Run this effect only once on component mount
