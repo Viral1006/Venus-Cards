@@ -152,9 +152,9 @@ const AboutUs = () => {
             </div>
     </form>
   </div>
-  <div className="md:order-2">
+  <div className="md:order-2 z-10">
     {/* Map */}
-    <div className='sm:mt-[92px] z-0 '>
+    <div className='sm:mt-[92px] '>
       <MapContainer center={[companyLocation.latitude, companyLocation.longitude]} zoom={15} style={{ height: '400px', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
