@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4 sticky-nav ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/" className="text-white font-medium font-barlow-condensed text-2xl tracking-wide">Venus Computers</Link>
+          <Link to="/" className="text-white font-medium font-barlow-condensed text-2xl tracking-wide">Venus Cards</Link>
         </div>
         <div className="hidden md:flex md:items-center md:justify-center flex-1">
           <Link to="/" className="text-white hover:bg-gray-700 px-5 py-2 rounded-md">Home</Link>
