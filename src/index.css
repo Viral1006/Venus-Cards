@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blurred-background {
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+  }
+
+  .modal-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
