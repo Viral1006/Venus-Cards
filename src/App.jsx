@@ -63,6 +63,7 @@ import HomePage from './components/HomePage';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
+import CarouselIntegrate from './components/CarouselIntegrate';
 
 const App = () => {
   return (
@@ -75,7 +76,7 @@ const App = () => {
           {/* Place Carousel within Routes */}
         </Routes>
         <Routes>
-        <Route path="/" element={<Carousel />} /> 
+        <Route path="/" element={<CarouselIntegrate />} /> 
         </Routes>
         <Footer />
       </div>

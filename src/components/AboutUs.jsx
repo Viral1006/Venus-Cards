@@ -154,7 +154,7 @@ const AboutUs = () => {
   </div>
   <div className="md:order-2">
     {/* Map */}
-    <div className='sm:mt-24'>
+    <div className='sm:mt-[92px]'>
       <MapContainer center={[companyLocation.latitude, companyLocation.longitude]} zoom={15} style={{ height: '400px', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -168,7 +168,7 @@ const AboutUs = () => {
     <p className='font-montserrat text-lg mt-4 mb-2'>{companyAddress}</p>
     <p className='font-montserrat text-base'>{companyAddress1}</p>
     <p className='font-montserrat text-base'>{companyAddress2}</p>
-    <p className='font-montserrat text-base mb-4 sm:mb-4 '>{companyAddress3}</p>
+    <p className='font-montserrat text-base mb-4 sm:mb-6 '>{companyAddress3}</p>
   </div>
 </div>
 </div> 
