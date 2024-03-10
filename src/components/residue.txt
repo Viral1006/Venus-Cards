@@ -1,0 +1,192 @@
+import React from 'react';
+import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api';
+
+const companyAddress = "123 Company Address, City, Country";
+const companyLocation = { lat: 51.5074, lng: -0.1278 }; // Example coordinates for London
+
+const AboutUs = () => {
+  return (
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="md:w-1/2">
+        <h1 className="text-2xl font-bold mb-4">About Us</h1>
+        <p className="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Fusce nec nulla a felis commodo maximus. 
+          Nulla facilisi. Etiam eu eros vitae odio malesuada vehicula. 
+          Sed in interdum orci. Donec eget vestibulum velit, 
+          nec auctor elit. Nullam vehicula, libero eget scelerisque 
+          vestibulum, urna nulla facilisis nunc, ut sagittis dui leo 
+          vel eros. Nam in nisi ut elit tincidunt consequat. 
+          Morbi ut dolor nec mauris elementum eleifend. 
+          Donec pulvinar odio in ligula auctor venenatis. 
+          Aliquam convallis elit nec turpis consequat, in 
+          commodo lectus facilisis. Suspendisse eget justo 
+          eget orci finibus cursus in sed augue.
+        </p>
+        <p>Email: example@example.com</p>
+        <p>Contact: 123-456-7890</p>
+      </div>
+      {/* <div className="md:w-1/2">
+        <form className="bg-gray-100 p-4 rounded-md">
+          <label>Name:</label>
+          <input type="text" className="block w-full mb-2" />
+          <label>Email:</label>
+          <input type="email" className="block w-full mb-2" />
+          <label>Contact:</label>
+          <input type="text" className="block w-full mb-2" />
+          <label>Product Selection:</label>
+          <select className="block w-full mb-2">
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+          </select>
+          <label>Approx. Quantity:</label>
+          <input type="number" className="block w-full mb-2" />
+          <label>Address:</label>
+          <input type="text" className="block w-full mb-2" />
+          <label>Business Name:</label>
+          <input type="text" className="block w-full mb-2" />
+          <label>Description:</label>
+          <textarea className="block w-full mb-2"></textarea>
+          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+        </form>
+        </div> */}
+        <div className="md:w-1/2">
+  <form className="bg-gray-100 p-4 rounded-md grid grid-cols-2 gap-4">
+    <div>
+      <label>Name:</label>
+      <input type="text" className="block w-full mb-2" />
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type="email" className="block w-full mb-2" />
+    </div>
+    <div>
+      <label>Contact:</label>
+      <input type="text" className="block w-full mb-2" />
+    </div>
+    <div>
+      <label>Product Selection:</label>
+      <select className="block w-full mb-2">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+      </select>
+    </div>
+    <div>
+      <label>Approx. Quantity:</label>
+      <input type="number" className="block w-full mb-2" />
+    </div>
+    <div>
+      <label>Address:</label>
+      <input type="text" className="block w-full mb-2" />
+    </div>
+    <div>
+      <label>Business Name:</label>
+      <input type="text" className="block w-full mb-2" />
+    </div>
+    <div className="col-span-2">
+      <label>Description:</label>
+      <textarea className="block w-full mb-2"></textarea>
+    </div>
+    <div className="col-span-2 flex justify-end">
+      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+    </div>
+  </form>
+</div>
+
+        <div className="mt-4">
+          <LoadScript
+            googleMapsApiKey="YOUR_API_KEY"
+          >
+            <GoogleMap
+              mapContainerStyle={{ width: '100%', height: '300px' }}
+              center={companyLocation}
+              zoom={15}
+            >
+              <Marker position={companyLocation} />
+            </GoogleMap>
+          </LoadScript>
+          <p>{companyAddress}</p>
+        </div>
+      {/* </div> */}
+    </div>
+  );
+}
+
+export default AboutUs;
+
+
+
+
+     
+    <div>
+      <div className=' p-6 bg-slate-200 '>
+        <h1 className='px-4 mx-20 mt-10 text-[#4b4b4b] items-left justify-left flex font-bold text-4xl font-barlow-condensed ' >About Us</h1>
+        <p className=' px-4 py-2 mx-20 text-[#4b4b4b] font-montserrat font-medium text-xl ' >{companyDescription}</p>
+      </div>
+      
+      <div className=" h-[100vh] mx-24 grid grid-cols-2 gap-4">
+        <div>
+          <form className=" mb-10 mt-10 bg-none p-10 rounded">
+            <h2 className="text-xl font-montserrat font-medium mb-4 ">Please fill in the form below & someone from our team will be in touch with you shortly:</h2>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label>Name:</label>
+                <input type="text" className="block p-1 bg-gray-300 w-full mb-2" />
+              </div>
+              <div>
+                <label>Email:</label>
+                <input type="email" className="block p-1 bg-gray-300 w-full mb-2" />
+              </div>
+              <div>
+                <label>Contact:</label>
+                <input type="text" className="block p-1 bg-gray-300 w-full mb-2" />
+              </div>
+              <div>
+                <label>Product Selection:</label>
+                <select className="block p-1 bg-gray-300 w-full mb-2">
+                  <option value="product1">Product 1</option>
+                  <option value="product2">Product 2</option>
+                  <option value="product3">Product 3</option>
+                </select>
+              </div>
+              <div>
+                <label>Approx. Quantity:</label>
+                <input type="number" className="block p-1 bg-gray-300 w-full mb-2" />
+              </div>
+              <div>
+                <label>Address:</label>
+                <input type="text" className="block p-1 bg-gray-300 w-full mb-2" />
+              </div>
+              <div>
+                <label>Business Name:</label>
+                <input type="text" className="block p-1 bg-gray-300 w-full mb-2" />
+              </div>
+              <div className="col-span-2">
+                <label>Description:</label>
+                <textarea className="block p-1 w-full bg-gray-300 mb-2"></textarea>
+              </div>
+              <div className="col-span-2 flex justify-end">
+                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <ReactMapGL
+            {...viewport}
+            mapStyle="mapbox://styles/mapbox/streets-v11"
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            onViewportChange={(viewport) => setViewport(viewport)}
+          >
+            <Marker latitude={companyLocation.latitude} longitude={companyLocation.longitude} offsetLeft={-20} offsetTop={-10}>
+              <div style={{ width: '40px', height: '40px', backgroundColor: 'blue', borderRadius: '50%' }}></div>
+            </Marker>
+          </ReactMapGL>
+          <div>
+            <p>{companyAddress}</p>
+          </div>
+        </div>
+      </div>
+    </div>

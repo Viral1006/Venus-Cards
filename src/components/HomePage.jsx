@@ -61,7 +61,7 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className="bg-gray-100 py-8">
+    <div className="bg-[#F9F07A] py-8">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="font-barlow-condensed text-4xl md:text-5xl font-bold text-gray-800 text-center mb-4 uppercase">
           Crafting Custom Solutions Just for You

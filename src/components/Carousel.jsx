@@ -96,7 +96,7 @@ useEffect(() => {
 
   return (
     <div className="flex items-center justify-center z-0 ">
-      <div className="bg-[#F9F07A] p-4 w-screen h-[60vh] flex items-center justify-between relative">
+      <div className=" bg-[#ffdfdf] p-4 w-screen h-[60vh] flex items-center justify-between relative">
         {/* <button
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={prevProduct}
@@ -140,6 +140,42 @@ useEffect(() => {
         </button>
       </div>
     </div>
+
+//     <div className="flex items-center justify-center z-0">
+//   <div className="bg-[#ffdfdf] p-4 w-screen h-[60vh] flex flex-col items-center justify-between relative">
+//     <div className="mb-4">
+//       <h2 className="text-3xl md:text-5xl font-bold text-gray-800 font-barlow-condensed mb-2 text-center">
+//         {products[currentProductIndex].name}
+//       </h2>
+//       <p className="font-montserrat text-gray-800 mt-4 text-center">
+//         {products[currentProductIndex].description}
+//       </p>
+//     </div>
+//     <div className="w-full">
+//       <img
+//         src={products[currentProductIndex].imageUrl}
+//         alt={products[currentProductIndex].name}
+//         className="w-full h-auto rounded"
+//         style={{ maxWidth: '350px', maxHeight: '320px', margin: '0 auto' }}
+//       />
+//     </div>
+//     <div className="flex justify-between w-full mt-4">
+//       <button
+//         className="bg-none hover:bg-none text-gray-800 font-bold py-2 px-4 rounded"
+//         onClick={prevProduct}
+//       >
+//         <FontAwesomeIcon icon={faChevronLeft} />
+//       </button>
+//       <button
+//         className="bg-none hover:bg-none text-gray-800 font-bold py-2 px-4 rounded"
+//         onClick={nextProduct}
+//       >
+//         <FontAwesomeIcon icon={faChevronRight} />
+//       </button>
+//     </div>
+//   </div>
+// </div>
+
   );
 };
 
