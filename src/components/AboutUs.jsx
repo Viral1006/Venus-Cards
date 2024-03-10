@@ -132,7 +132,7 @@ const AboutUs = () => {
               </div>
               <div>
                 {/* <label>Approx. Quantity:</label> */}
-                <input type="number" className="block p-2 bg-none w-full mb-2 border border-gray-300 rounded-md" placeholder="Approximate Quantity: " />
+                <input type="number" className="block p-2 bg-none w-full mb-2 border border-gray-300 rounded-md" placeholder="Approx. Quantity: " />
               </div>
               <div>
                 {/* <label>Address:</label> */}
@@ -147,7 +147,7 @@ const AboutUs = () => {
                 <textarea className="block p-2 w-full bg-none mb-2 border border-gray-300 rounded-md" placeholder="Description: "></textarea>
               </div>
               <div className="col-span-2 flex justify-end">
-                <button type="submit" className="bg-[#F9F07A] text-black w-full px-4 py-2 rounded-md">Submit</button>
+                <button type="submit" className="bg-[#F9F07A] hover:bg-[#3a3a3a] hover:text-[#F9F07A] transition-transform duration-300 transform hover:scale-90 text-black w-full px-4 py-2 rounded-md">Submit</button>
               </div>
             </div>
     </form>

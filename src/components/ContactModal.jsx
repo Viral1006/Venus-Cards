@@ -15,42 +15,42 @@ const ContactModal = ({ isOpen, onClose }) => {
       onClick={handleOutsideClick}
     >
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <h2 className="text-2xl text-gray-700  font-bold mb-4">Contact Us</h2>
         <form>
           <div className="mb-4">
             <label htmlFor="query" className="text-gray-700">
-              Query
+              
             </label>
             <textarea
               id="query"
               name="query"
-              className="border border-gray-300 rounded-md p-2 w-full"
+              className="border border-gray-300 rounded-md p-2 w-full" placeholder='Your Query: '
               rows="4"
               required
             ></textarea>
           </div>
           <div className="mb-4">
-            <label htmlFor="name" className="text-gray-700">
-              Name
+            <label htmlFor="name" className="text-gray-700" >
+              
             </label>
             <input
               type="text"
               id="name"
               name="name"
-              className="border border-gray-300 rounded-md p-2 w-full"
+              className="border border-gray-300 rounded-md p-2 w-full" placeholder='Name: ' 
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="text-gray-700">
-              Email
+            <label htmlFor="email" className="text-gray-700"  >
+              
             </label>
             <div className="relative">
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="border border-gray-300 rounded-md p-2 w-full pl-10"
+                className="border border-gray-300 rounded-md p-2 w-full pl-10" placeholder='E-Mail: '
                 required
               />
               <span className="absolute left-2 top-2">
@@ -72,15 +72,15 @@ const ContactModal = ({ isOpen, onClose }) => {
             </div>
           </div>
           <div className="mb-4">
-            <label htmlFor="contact" className="text-gray-700">
-              Contact Number (Optional)
+            <label htmlFor="contact" className="text-gray-700" >
+              
             </label>
             <div className="relative">
               <input
                 type="tel"
                 id="contact"
                 name="contact"
-                className="border border-gray-300 rounded-md p-2 w-full pl-10"
+                className="border border-gray-300 rounded-md p-2 w-full pl-10" placeholder='Contact Number(Optional): '
               />
               <span className="absolute left-2 top-2">
                 <svg
@@ -102,7 +102,8 @@ const ContactModal = ({ isOpen, onClose }) => {
           </div>
           <button
             type="submit"
-            className="bg-[#F9F07A] w-full text-black px-4 py-2 rounded-md hover:bg-[#fffaaf]"
+            // className="bg-[#F9F07A] w-full text-black px-4 py-2 rounded-md hover:bg-[#fffaaf]"
+            className="bg-[#F9F07A] hover:bg-[#3a3a3a] hover:text-[#F9F07A] transition-transform duration-300 transform hover:scale-90 text-black w-full px-4 py-2 rounded-md"
           >
             Submit
           </button>
