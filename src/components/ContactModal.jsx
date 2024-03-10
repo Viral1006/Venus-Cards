@@ -9,7 +9,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-full flex items-center justify-center modal-bg z-10 ${
+      className={`fixed top-0 left-0 w-full h-full flex items-center justify-center modal-bg z-20 ${
         isOpen ? 'modal-bg' : 'hidden'
       }` }
       onClick={handleOutsideClick}
